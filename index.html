@@ -1,31 +1,141 @@
 <!doctype html>
-<html lang="ru" data-stub>
+<html lang="ru">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Сайт игрового провайдера (HY / RU / EN) · демо готовится</title>
-<meta name="robots" content="noindex">
-<meta http-equiv="refresh" content="120">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vorotan Games · разработчик игр для операторов</title>
+<meta name="description" content="Vorotan Games – студия из Еревана: HTML5-игры для лицензированных операторов, интеграция по единому API за 2 недели. Сайт на армянском, русском и английском. Демо-сайт.">
+<meta property="og:title" content="Vorotan Games · игровой провайдер из Армении">
+<meta property="og:description" content="HTML5-игры для лицензированных операторов. Интеграция за 2 недели.">
+<meta property="og:url" content="https://vladislav-jb.github.io/game-provider/">
+<meta property="og:type" content="website">
+<link rel="alternate" hreflang="hy" href="https://vladislav-jb.github.io/game-provider/?lang=hy">
+<link rel="alternate" hreflang="ru" href="https://vladislav-jb.github.io/game-provider/?lang=ru">
+<link rel="alternate" hreflang="en" href="https://vladislav-jb.github.io/game-provider/?lang=en">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230B0A12'/%3E%3Cpath d='M8 9l8 15 8-15' fill='none' stroke='%23F2B84B' stroke-width='3' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Manrope:wght@400;600&display=swap">
-<style>
-:root{--bg:#F6F3EE;--ink:#1F1E1C;--muted:#6B655C;--acc:#8A6737}
-@media (prefers-color-scheme:dark){:root{--bg:#161615;--ink:#EDE7DC;--muted:#A9A195;--acc:#C9A66B}}
-*{box-sizing:border-box}html,body{height:100%}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Manrope,system-ui,sans-serif;display:grid;place-items:center;padding:24px}
-main{max-width:560px;text-align:center;display:flex;flex-direction:column;gap:18px;align-items:center}
-.k{font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);font-weight:600}
-h1{font:500 clamp(2rem,6vw,3rem)/1.1 "Cormorant Garamond",Georgia,serif;margin:0;text-wrap:balance}
-p{margin:0;color:var(--muted)}
-.bar{width:220px;height:3px;background:color-mix(in srgb,var(--acc) 20%,transparent);border-radius:3px;overflow:hidden}
-.bar i{display:block;height:100%;width:40%;background:var(--acc);animation:m 1.6s ease-in-out infinite}
-@keyframes m{0%{transform:translateX(-100%)}100%{transform:translateX(250%)}}
-@media (prefers-reduced-motion:reduce){.bar i{animation:none;width:60%}}
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Armenian:wght@400;600;800&family=Noto+Sans:wght@400;600;700;800&family=Unbounded:wght@500;600&display=swap">
+<link rel="stylesheet" href="style.css?v=1">
 </head>
-<body><main>
-<div class="k">Демо-версия по вашему ТЗ</div>
-<h1>Сайт игрового провайдера (HY / RU / EN)</h1>
-<div class="bar" aria-hidden="true"><i></i></div>
-<p>Сайт сейчас собирается по вашему техническому заданию.<br>Будет готов сегодня к <b>15:40</b> – по этой же ссылке.</p>
-<p style="font-size:.85rem">Страница обновится сама.</p>
-</main></body></html>
+<body>
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <a class="logo" href="#top"><svg width="30" height="30" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="#181527"/><path d="M8 9l8 15 8-15" fill="none" stroke="#F2B84B" stroke-width="3" stroke-linejoin="round"/></svg><span>Vorotan Games</span></a>
+    <nav class="nav" aria-label="Menu">
+      <a href="#games" data-i="nav_games">Игры</a><a href="#why" data-i="nav_why">Преимущества</a><a href="#integration" data-i="nav_int">Интеграция</a><a href="#about" data-i="nav_about">О нас</a><a href="#contact" data-i="nav_contact">Контакты</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language"><button data-l="hy">HY</button><button data-l="ru">RU</button><button data-l="en">EN</button></div>
+    <button class="burger" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap hero__in">
+    <div class="hero__txt">
+      <span class="kick" data-i="hero_kick">Игровой провайдер · Ереван</span>
+      <h1 data-i="hero_h1">Игры, которые удерживают игроков</h1>
+      <p class="lede" data-i="hero_lede">Разрабатываем HTML5-игры для лицензированных операторов: слоты, настольные и мгновенные игры. Одна интеграция по API – и весь каталог у вас на площадке.</p>
+      <div class="hero__cta">
+        <a class="btn btn--acc" href="#contact" data-i="hero_cta">Стать партнёром →</a>
+        <a class="btn" href="#games" data-i="hero_cta2">Смотреть игры</a>
+      </div>
+      <div class="cert"><span data-i="cert1">Сертифицированный ГСЧ</span><span data-i="cert2">HTML5 · mobile first</span><span data-i="cert3">20+ валют</span></div>
+    </div>
+    <div class="reels" aria-hidden="true">
+      <div class="reels__frame"><div class="reel"><div class="reel__strip"></div></div><div class="reel"><div class="reel__strip"></div></div><div class="reel"><div class="reel__strip"></div></div></div>
+      <div class="reels__glow"></div><div class="reels__line"></div>
+      <div class="reels__tag"><b>96,5%</b><span data-i="rtp">средний RTP каталога</span></div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="kpis">
+      <div class="kpi"><b>40+</b><span data-i="k1">игр в каталоге</span></div>
+      <div class="kpi"><b>2 <span data-i="k2u" style="font-size:.6em">нед.</span></b><span data-i="k2">на интеграцию</span></div>
+      <div class="kpi"><b>60+</b><span data-i="k3">операторов-партнёров</span></div>
+      <div class="kpi"><b>99,95%</b><span data-i="k4">аптайм платформы</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="games">
+  <div class="wrap">
+    <div class="sec__head rv"><div><span class="kick" data-i="g_kick">Портфолио</span><h2 data-i="g_h">Наши игры</h2></div><p data-i="g_p">Каждая игра проходит независимую сертификацию и работает на любом экране – от старого смартфона до 4K-монитора.</p></div>
+    <div class="games rv" id="gamelist"></div>
+  </div>
+</section>
+
+<section class="sec" id="why">
+  <div class="wrap">
+    <div class="sec__head rv"><div><span class="kick" data-i="w_kick">Преимущества</span><h2 data-i="w_h">Почему операторы выбирают нас</h2></div></div>
+    <div class="feat rv">
+      <div><span class="ic">⚙</span><h3 data-i="f1h">Гибкие настройки</h3><p data-i="f1p">Несколько профилей RTP, лимиты ставок и валюты – настраиваются под каждую площадку и юрисдикцию.</p></div>
+      <div><span class="ic">📱</span><h3 data-i="f2h">Мобильные с первого пикселя</h3><p data-i="f2p">Игры весят до 5 МБ, быстро загружаются в мобильных сетях и работают в портретной и альбомной ориентации.</p></div>
+      <div><span class="ic">🛡</span><h3 data-i="f3h">Сертификация</h3><p data-i="f3p">Генератор случайных чисел и математика игр проверены независимой лабораторией. Отчёты – по запросу.</p></div>
+      <div><span class="ic">🎯</span><h3 data-i="f4h">Инструменты удержания</h3><p data-i="f4p">Турниры, фриспины и кампании настраиваются оператором из панели без участия разработчиков.</p></div>
+      <div><span class="ic">📊</span><h3 data-i="f5h">Аналитика в реальном времени</h3><p data-i="f5p">Панель с оборотом, удержанием и популярностью игр. Выгрузка данных в вашу BI-систему.</p></div>
+      <div><span class="ic">🌐</span><h3 data-i="f6h">Локализация</h3><p data-i="f6p">Интерфейс игр на 18 языках, включая армянский, русский и английский. Добавим нужный язык за неделю.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="integration">
+  <div class="wrap">
+    <div class="sec__head rv"><div><span class="kick" data-i="i_kick">Интеграция</span><h2 data-i="i_h">От договора до запуска – 2 недели</h2></div><p data-i="i_p">Единый API для всего каталога. Новые игры появляются у вас автоматически.</p></div>
+    <ol class="steps rv" style="padding:0;margin:0">
+      <li><h3 data-i="s1h">Договор и доступы</h3><p data-i="s1p">Подписываем соглашение, выдаём доступ к тестовой среде и документации.</p></li>
+      <li><h3 data-i="s2h">Подключение API</h3><p data-i="s2p">Ваши разработчики подключают один API: кошелёк, сессии, история раундов.</p></li>
+      <li><h3 data-i="s3h">Тестирование</h3><p data-i="s3p">Проверяем все сценарии вместе с вами на тестовой среде.</p></li>
+      <li><h3 data-i="s4h">Запуск</h3><p data-i="s4p">Включаем игры на вашей площадке и сопровождаем 24/7.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec" id="about">
+  <div class="wrap about">
+    <div class="about__card rv">
+      <div><b>2019</b><span data-i="a1">год основания</span></div>
+      <div><b>70+</b><span data-i="a2">специалистов в команде</span></div>
+      <div><b>12</b><span data-i="a3">стран присутствия</span></div>
+      <div><b>24/7</b><span data-i="a4">техподдержка партнёров</span></div>
+    </div>
+    <div class="about__txt rv">
+      <span class="kick" data-i="ab_kick">О компании</span>
+      <h2 data-i="ab_h">Студия из Еревана с командой полного цикла</h2>
+      <p data-i="ab_p1">Математики, художники, аниматоры и разработчики работают в одном офисе. Мы сами придумываем, рисуем, программируем и сертифицируем каждую игру.</p>
+      <p data-i="ab_p2">Работаем только с лицензированными операторами и соблюдаем требования каждой юрисдикции.</p>
+      <div class="lic"><span>ISO/IEC 27001</span><span data-i="lic2">Сертифицированный ГСЧ</span><span data-i="lic3">Ответственная игра</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="contact" style="border-bottom:0">
+  <div class="wrap contact">
+    <div class="contact__info rv">
+      <span class="kick" data-i="c_kick">Партнёрство</span>
+      <h2 data-i="c_h">Обсудим интеграцию</h2>
+      <p class="muted" data-i="c_p">Оставьте заявку – менеджер по партнёрам ответит в течение рабочего дня и пришлёт демо-доступ ко всем играм.</p>
+      <dl>
+        <dt data-i="c_addr_t">Адрес</dt><dd data-i="c_addr">Ереван, ул. Примерная, 1</dd>
+        <dt>E-mail</dt><dd>partners@example.com</dd>
+        <dt data-i="c_tel_t">Телефон</dt><dd>+374 00 000 000</dd>
+      </dl>
+    </div>
+    <form class="form rv" id="form">
+      <label><span data-i="fl_name">Имя</span><input required autocomplete="name"></label>
+      <label><span data-i="fl_company">Компания</span><input required></label>
+      <label><span>E-mail</span><input type="email" required autocomplete="email"></label>
+      <label><span data-i="fl_country">Страна / юрисдикция</span><input></label>
+      <label class="wide"><span data-i="fl_msg">Сообщение</span><textarea data-ph="fl_msg_ph" placeholder="Какие игры интересуют, объём трафика, сроки запуска"></textarea></label>
+      <div class="wide"><button class="btn btn--acc" type="submit" data-i="fl_send">Отправить заявку</button></div>
+      <p class="ok" hidden data-i="fl_ok">Спасибо! Это демо-сайт – заявка никуда не отправлена.</p>
+    </form>
+  </div>
+  <div class="wrap"><p class="age" data-i="age">18+. Информация на сайте предназначена для операторов (B2B) и не является рекламой азартных игр.</p></div>
+</section>
+</main>
+
+<footer class="ftr"><div class="wrap ftr__in"><span>© 2026 Vorotan Games</span><span data-i="foot">Демо-сайт: название, цифры и контакты условные</span></div></footer>
+<script src="app.js?v=1"></script>
+</body>
+</html>
