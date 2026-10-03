@@ -33,7 +33,7 @@
       c_addr_t: 'Հասցե', c_addr: 'Երևան, Օրինակելի փ., 1', c_tel_t: 'Հեռախոս',
       fl_name: 'Անուն', fl_company: 'Ընկերություն', fl_country: 'Երկիր / իրավասություն', fl_msg: 'Հաղորդագրություն', fl_msg_ph: 'Ինչ խաղեր են հետաքրքրում, երթևեկության ծավալ, ժամկետներ',
       fl_send: 'Ուղարկել հայտը', fl_ok: 'Շնորհակալություն։ Սա դեմո կայք է՝ հայտը չի ուղարկվել։',
-      age: '18+։ Կայքի տեղեկատվությունը նախատեսված է օպերատորների համար (B2B) և մոլախաղերի գովազդ չէ։', foot: 'Դեմո կայք՝ անվանումը, թվերը և կոնտակտները պայմանական են'
+      age: '18+։ Կայքի տեղեկատվությունը նախատեսված է օպերատորների համար (B2B) և մոլախաղերի գովազդ չէ։', foot: 'Դեմո կայք՝ անվանումը, թվերը և կոնտակտները պայմանական են', made: 'Made by'
     },
     en: {
       nav_games: 'Games', nav_why: 'Why us', nav_int: 'Integration', nav_about: 'About', nav_contact: 'Contact',
@@ -63,7 +63,7 @@
       c_addr_t: 'Address', c_addr: 'Yerevan, 1 Example St.', c_tel_t: 'Phone',
       fl_name: 'Name', fl_company: 'Company', fl_country: 'Country / jurisdiction', fl_msg: 'Message', fl_msg_ph: 'Games of interest, traffic volume, launch dates',
       fl_send: 'Send request', fl_ok: 'Thank you! This is a demo site – the request was not sent.',
-      age: '18+. Information on this site is intended for operators (B2B) and is not gambling advertising.', foot: 'Demo site: name, figures and contacts are placeholders'
+      age: '18+. Information on this site is intended for operators (B2B) and is not gambling advertising.', foot: 'Demo site: name, figures and contacts are placeholders', made: 'Made by'
     }
   };
   const GAMES = [
